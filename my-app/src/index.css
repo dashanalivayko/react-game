@@ -1,0 +1,52 @@
+body {
+    font: 25px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+}
+  
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+    transition: 2s ease-in-out;
+    border-radius: 7px;
+}
+
+.square[onclick] {
+    transition: 2s ease-in-out;
+}
+
+
+.square:focus {
+    outline: none;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+}
+
